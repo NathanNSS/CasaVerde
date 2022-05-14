@@ -1,56 +1,62 @@
-import styles from './stylesMenu.module.css';
+import {Nav, Lista, ItemLista, Separador} from './stylesMenu';
 import Logo from '../../assets/logo.svg'
 
 export default function Menu() {
+    
     const itemMenu = [
         {
-            name: 'Como fazer'
+            name: 'Como fazer',
+            to: "#"
         },
         {
-            name: 'Ofertas'
+            name: 'Ofertas',
+            to: "#"
         },
         {
-            name: 'Depoimentos'
+            name: 'Depoimentos',
+            to: "#"
         },
         {
-            name: 'Vídeos'
+            name: 'Vídeos',
+            to: "#"
         },
         {
-            name: 'Meu Carrinho'
+            name: 'Meu Carrinho',
+            to: "#"
         }
     ]
 
-    function Separador() {
+    function SeparadorComp() {
         return (
-            <span className={styles.separador}>
+            <Separador>
                 /
-            </span>
+            </Separador>
         )
     }
 
     return (
         <header >
-            <nav className={styles.container}>
+            <Nav>
                 <img src={Logo} alt="logo da página" />
-                <div>
+                <Lista style={{ display: 'flex', flexDirection: 'row'}}>
                     {
                         itemMenu.map((item, index) => (
-                            <span key={index} className={styles.itemMenu}>
-                                <a href="" className={styles.textoMenu}>
+                            <li key={index}>
+                                <ItemLista href={item.to}>
                                     {item.name}
                                     {
                                         item.name === 'Meu Carrinho' ?
                                             ` `
                                             :
-                                            <Separador />
+                                            <SeparadorComp />
                                     }
-                                </a>
-                            </span>
+                                </ItemLista>
+                            </li>
                         ))
                     }
 
-                </div>
-            </nav>
+                </Lista>
+            </Nav>
         </header>
     )
 }
