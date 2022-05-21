@@ -45,7 +45,26 @@ table {
     border-spacing: 0;
 }
 
-/* 
-    font-family: 'Elsie Swash Caps', cursive;
-    font-family: 'Montserrat', sans-serif; 
-*/
+@media (max-width:1200px) {
+    main{
+        margin: 0px 100px ;
+    }
+}
+
+@media (min-width:1200px) {
+    
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+
+@media(min-width: 975px) {
+    body {
+        background-image: url('/src//assets/body-shape.svg');
+        background-repeat: no-repeat, 
+                          repeat-x;
+        background-position: right top;
+    }
+}

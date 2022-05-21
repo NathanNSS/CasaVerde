@@ -1,6 +1,6 @@
 export const theme = {
     fonts:{
-        elsie: 'Elsie Swash',
+        elsie: 'Elsie Swash Caps',
         montserrat: 'Montserrat',
 
     },

@@ -10,10 +10,9 @@ export const Container = styled.form`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 300px;
     width: 585px;
     height: 75px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 `
 
 export const IconEmail = styled(MdOutlineEmail)`

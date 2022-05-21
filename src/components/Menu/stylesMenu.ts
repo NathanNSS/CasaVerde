@@ -10,6 +10,7 @@ export const Nav = styled.nav`
     align-items: flex-end;
     width: 100%;
     margin-top: 10px;
+    margin-bottom: 150px;
 `
 export const Lista = styled.ul`
     list-style: none;
