@@ -35,7 +35,7 @@ export const Texto = styled.p`
 export const Hero = styled.img`
     position: absolute;
     right: 400px;
-    top:0;
+    top:-30px;
     z-index: -1 !important;
 `
 export const ContainerInstrucao = styled.div`

@@ -24,7 +24,7 @@ export const Produtos = styled.div`
     grid-template-columns: auto auto auto;
     justify-content: flex-start;  
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 15px 0px;
     gap: 30px;
     @media(min-width: 800px){
